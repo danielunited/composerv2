@@ -1,0 +1,34 @@
+{
+    "name": "kyrne/composer",
+    "description": "Make the composer always visible on Posts.",
+    "keywords": [
+        "extension",
+        "flarum"
+    ],
+    "type": "flarum-extension",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Charlie K",
+            "email": "charlie.k@redevs.org"
+        }
+    ],
+    "require": {
+        "flarum/core": "^0.1.0-beta.12"
+    },
+    "extra": {
+        "flarum-extension": {
+            "title": "Kyrne Composer",
+            "icon": {
+                "name": "fas fa-window-maximize",
+                "background": "linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(224,64,251,1) 0%, rgba(33,150,243,1) 100%)",
+                "color": "#fff"
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Kyrne\\Composer\\": "src/"
+        }
+    }
+}
